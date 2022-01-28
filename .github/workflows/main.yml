@@ -32,7 +32,7 @@ jobs:
           # ssh remote password
           pass: ${{ secrets.STAGING_PASSWORD }}
           script: |
-            cd services/ktr-backend-main-service/
+            cd availability-room-api/
             git pull
             npm install
             pm2 update
