@@ -16,6 +16,10 @@ function initModels(sequelize) {
   var Stay = _Stay(sequelize, DataTypes);
   var StayRoom = _StayRoom(sequelize, DataTypes);
 
+  Room.belongsTo(RoomType, { foreignKey: 'room_type_id' })
+  RoomType.hasMany(Room, { foreignKey: 'room_type_id' })
+  RoomType.hasMany(Price, { foreignKey: 'room_type_id' })
+  Price.belongsTo(RoomType, { foreignKey: 'room_type_id' })
 
   return {
     Hotel,
