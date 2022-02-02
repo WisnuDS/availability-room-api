@@ -13,7 +13,7 @@ module.exports = {
     */
     const moment = require('moment')
     const { v4 } = require('uuid')
-    await queryInterface.bulkInsert('Reservation', [{
+    await queryInterface.bulkInsert('reservation', [{
       order_id: v4(),
       customer_name: 'Dedik Sunandar',
       booked_room_count: 1,

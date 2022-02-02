@@ -11,7 +11,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('Stay', [{
+    await queryInterface.bulkInsert('stay', [{
       reservation_id: 1,
       guest_name: 'Dedik Kusnandar',
       room_id: 50

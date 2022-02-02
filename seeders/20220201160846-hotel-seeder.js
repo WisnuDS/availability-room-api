@@ -11,7 +11,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('Hotel', [{
+    await queryInterface.bulkInsert('hotel', [{
       hotel_name: 'Ibis Hotel',
       address: 'Jalan Kapten Slamet'
     }], {});

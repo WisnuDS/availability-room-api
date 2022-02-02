@@ -22,7 +22,7 @@ module.exports = {
         })
       }
     }
-    await queryInterface.bulkInsert('Room', data, {});
+    await queryInterface.bulkInsert('room', data, {});
   },
 
   down: async (queryInterface, Sequelize) => {

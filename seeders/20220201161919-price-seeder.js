@@ -25,7 +25,7 @@ module.exports = {
         today.add(1, 'day')
       }
     }
-    await queryInterface.bulkInsert('Price', data, {});
+    await queryInterface.bulkInsert('price', data, {});
   },
 
   down: async (queryInterface, Sequelize) => {
